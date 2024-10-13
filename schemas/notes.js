@@ -35,7 +35,7 @@ export default defineType({
             if (item && typeof item.title === 'string') {
               return {
                 title: item.title,
-                value: item.title.toLowerCase().split(' ').join('-'),
+                value: item.title,
               };
             } else {
               console.warn('Unexpected item format:', item);
@@ -73,7 +73,7 @@ export default defineType({
             if (item && typeof item.examname === 'string') {
               return {
                 title: item.examname,
-                value: item.examname.toLowerCase().split(' ').join('-'),
+                value: item.examname,
               };
             } else {
               console.warn('Unexpected item format:', item);
